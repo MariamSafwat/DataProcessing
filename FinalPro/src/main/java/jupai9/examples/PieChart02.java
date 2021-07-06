@@ -24,15 +24,7 @@ public class PieChart02 {
         //ExampleChart<PieChart> exampleChart = new PieChart02();
         //PieChart chart = exampleChart.getChart();
         //new SwingWrapper<PieChart>(chart).displayChart();
-        java.util.List<String> names = new ArrayList<String>();
-        names.add("MAAA");
-        names.add("SSS");
-        names.add("GGGG");
-        List<Integer> num = new ArrayList<>();
-        num.add(20);
-        num.add(50);
-        num.add(225);
-        //PieChart02.getChart(names , num);
+       
     }
 
 
