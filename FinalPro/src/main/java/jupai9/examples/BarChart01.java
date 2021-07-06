@@ -29,26 +29,21 @@ public class BarChart01 {
         //ExampleChart<CategoryChart> exampleChart = new BarChart01();
         //CategoryChart chart = exampleChart.getChart();
         //new SwingWrapper<>(chart).displayChart();
-        java.util.List<String> names = new ArrayList<String>();
-        names.add("MAAA");
-        names.add("SSS");
-        names.add("GGGG");
-        List<Integer> num = new ArrayList<>();
-        num.add(20);
-        num.add(50);
-        num.add(225);
+
+
+
         //BarChart01.getChart(names, num);
     }
-    public static void getChart(List<String> A, List<Long> B) {
+    public static void getChart(List<String> A, List<Long> B,String title ,String x ,String y) {
 
         // Create Chart
         CategoryChart chart =
                 new CategoryChartBuilder()
                         .width(800)
                         .height(600)
-                        .title("title")
-                        .xAxisTitle("Score")
-                        .yAxisTitle("Number")
+                        .title(title)
+                        .xAxisTitle(x)
+                        .yAxisTitle(y)
                         .build();
 
         // Customize Chart
