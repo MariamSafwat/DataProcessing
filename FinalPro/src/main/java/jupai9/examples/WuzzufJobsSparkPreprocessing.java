@@ -80,7 +80,7 @@ public class WuzzufJobsSparkPreprocessing {
         List<Long> JobsFrequency = PopularJobs.map(row -> (Long) row.get(0), Encoders.LONG()).collectAsList();
         List<Long> TopJobsFrequency =JobsFrequency.subList(0,10);
         //7. Show step 6 in bar chart
-        BarChart01.getChart(TopJobs,TopJobsFrequency);
+        BarChart01.getChart(TopJobs,TopJobsFrequency,"Popular Job Titles","Job Titles","Job Frequency");
 
 
         //8. Find out the most popular areas
@@ -94,7 +94,7 @@ public class WuzzufJobsSparkPreprocessing {
         List<Long> AreasFreq = PopularAreas.map(row -> (Long) row.get(0), Encoders.LONG()).collectAsList();
         List<Long> TopAreasFreq =AreasFreq.subList(0,10);
         //9. Show step 8 in bar chart
-        BarChart01.getChart(TopAreas,TopAreasFreq);
+        BarChart01.getChart(TopAreas,TopAreasFreq,"Popular Areas","Areas","Area Frequency");
 
         //10. Print skills one by one and how many each repeated and order the output to find out the most important skills required
         WuzzufJobsData.createOrReplaceTempView ("Important_Skills");
